@@ -2852,7 +2852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:1.6.22, @mdx-js/react@npm:^1.6.19":
+"@mdx-js/react@npm:1.6.22, @mdx-js/react@npm:^1.6.19, @mdx-js/react@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/react@npm:1.6.22"
   peerDependencies:
@@ -3225,7 +3225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:6.1.11":
+"@storybook/addon-docs@npm:6.1.11, @storybook/addon-docs@npm:^6.1.11":
   version: 6.1.11
   resolution: "@storybook/addon-docs@npm:6.1.11"
   dependencies:
@@ -16958,7 +16958,9 @@ fsevents@~2.1.2:
     "@material-ui/core": ^4.11.2
     "@material-ui/icons": ^4.11.2
     "@material-ui/styles": ^4.11.2
+    "@mdx-js/react": ^1.6.22
     "@storybook/addon-actions": ^6.1.11
+    "@storybook/addon-docs": ^6.1.11
     "@storybook/addon-essentials": ^6.1.11
     "@storybook/addon-links": ^6.1.11
     "@storybook/react": ^6.1.11
