@@ -5,5 +5,9 @@
   "main": "tsconfig.json",
   "dependencies": {
     "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "awesome-typescript-loader": "^5.2.1"
   }
 }
