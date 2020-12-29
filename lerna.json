@@ -1,8 +1,11 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "0.0.0",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md", "*.test.ts", "*.test.tsx", "*.story.tsx", "*.stories.tsx"]
+    }
+  }
 }

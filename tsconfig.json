@@ -1,32 +1,11 @@
 {
+  "extends": "./packages/configs/typescript/tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    "declaration": true,
+    "noEmit": false,
     "jsx": "react",
-    "sourceMap": true,
-    "removeComments": true,
-    "downlevelIteration": true,
-    "preserveSymlinks": true
-  }
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": ["node_modules", "packages/**/node_modules", "types"],
+  "include": ["**/*.ts", "**/*.tsx"]
 }
