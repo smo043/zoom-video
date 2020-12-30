@@ -11,18 +11,17 @@ module.exports = {
       statements: 80
     }
   },
-  globals: {
-    'ts-jest': {
-      extends: './babel.config.js'
-    }
-  },
   modulePathIgnorePatterns: ['dist'],
   notify: true,
   notifyMode: 'always',
   roots: ['<rootDir>packages'],
   testMatch: ['**/__tests__/*.+(ts|tsx|js|jsx)', '**/*.test.+(ts|tsx|js|jsx)'],
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest'
+    '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': '<rootDir>/node_modules/babel-jest'
   },
+  transformIgnorePatterns: [
+    '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$',
+    '^.+\\.module\\.(css|sass|scss)$'
+  ],
   setupFilesAfterEnv: ['<rootDir>jest/setupTests.ts']
 };
