@@ -1,5 +1,5 @@
 {
-  "name": "typescript-config",
+  "name": "@smo043/ts-config",
   "version": "0.0.1",
   "description": "global ts config",
   "main": "tsconfig.json",
