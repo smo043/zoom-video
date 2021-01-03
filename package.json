@@ -13,7 +13,10 @@
     "lint:package": "sort-package-json",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "publish": "lerna publish && npm publish --registry http://localhost:4873"
+    "publish": "lerna publish && yarn publish"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
