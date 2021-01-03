@@ -12,7 +12,8 @@
     "format:nowrite": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|html|css|scss|json)\"",
     "lint:package": "sort-package-json",
     "storybook": "start-storybook -p 6006",
-    "test": "jest"
+    "test": "jest",
+    "publish": "lerna publish && npm publish --registry http://localhost:4873"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
