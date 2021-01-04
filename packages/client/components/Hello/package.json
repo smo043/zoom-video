@@ -1,0 +1,6 @@
+{
+  "name": "@smo043/hello",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "license": "MIT"
+}
