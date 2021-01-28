@@ -1,18 +1,23 @@
 import {ZoomMtg} from '@zoomus/websdk';
+
 import {ZoomWebProps} from '../types';
 
 export function joinMeeting(signature: string, meetConfig: ZoomWebProps['config']) {
+  const {leaveUrl, meetingNumber, userEmail, userName, passWord, apiKey} = meetConfig;
   ZoomMtg.init({
-    leaveUrl: meetConfig.leaveUrl,
+    debug: true,
+    leaveUrl,
     isSupportAV: true,
     success: function (success: any) {
       console.log('Init Success ', success);
+
       ZoomMtg.join({
-        meetingNumber: meetConfig.meetingNumber,
-        userName: meetConfig.userName,
-        signature: signature,
-        apiKey: meetConfig.apiKey,
-        passWord: meetConfig.passWord,
+        meetingNumber,
+        userName,
+        userEmail,
+        passWord,
+        apiKey,
+        signature,
 
         success: (joinSuccess: any) => {
           console.log(joinSuccess);
