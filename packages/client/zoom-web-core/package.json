@@ -1,0 +1,28 @@
+{
+  "name": "@smo043/zoom-web-core",
+  "version": "0.0.1",
+  "description": "A React Zoom web sdk component",
+  "repository": "https://github.com/smo043/lerna-react-app.git",
+  "license": "ISC",
+  "files": [
+    "tsconfig.json",
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "build:link": "rimraf ./build && yarn build --outDir ./build && copyfiles -e \"./**/*.ts\" -e \"./**/*.tsx\" \"./**/*.*\" build/ && yarn link --cwd ./build",
+    "build:watch": "yarn build --watch",
+    "clean": "rimraf \"!(node_modules|bin){,/**/}*.+(js|jsx|d.ts|js.map)\"",
+    "lint:package": "sort-package-json",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "@zoomus/websdk": "^1.8.6",
+    "axios": "^0.21.1",
+    "lodash": "^4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

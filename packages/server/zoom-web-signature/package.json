@@ -1,8 +1,8 @@
 {
-  "name": "@smo043/zoom-signature",
+  "name": "@smo043/zoom-web-signature",
   "version": "0.0.1",
   "private": true,
-  "description": "Module to get the Zoom Signatures",
+  "description": "Module to get the Zoom Web Signature",
   "repository": "https://github.com/smo043/lerna-react-app.git",
   "license": "ISC",
   "files": [

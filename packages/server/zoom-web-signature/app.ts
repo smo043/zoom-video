@@ -4,8 +4,8 @@ import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 4000;
-const API_KEY = process.env.API_KEY;
-const API_SECRET = process.env.API_SECRET;
+const API_KEY = process.env.API_KEY || '';
+const API_SECRET = process.env.API_SECRET || '';
 
 app.use(express.json(), cors());
 

@@ -25,7 +25,8 @@
     "test": "jest",
     "test:changed": "jest --onlyChanged --watch",
     "version": "prettier --write lerna.json",
-    "zoom-signature": "yarn workspace @smo043/zoom-signature"
+    "zoom-web-core": "yarn workspace @smo043/zoom-web-core",
+    "zoom-web-signature": "yarn workspace @smo043/zoom-web-signature"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
