@@ -17,7 +17,7 @@ export const ZoomWeb: FC<ZoomWebProps> = (props) => {
 
       setTimeout(() => joinMeeting(signature, config), 1000);
     }
-  }, [config, signature]);
+  }, [JSON.stringify(config), signature]);
 
   return <></>;
 };
