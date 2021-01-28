@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "global prettier config",
   "main": "prettier.config.js",
+  "scripts": {
+    "lint:package": "sort-package-json"
+  },
   "dependencies": {
     "prettier": "^2.2.1"
   }

@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "global ts config",
   "main": "tsconfig.json",
+  "scripts": {
+    "lint:package": "sort-package-json"
+  },
   "dependencies": {
     "typescript": "^4.1.3"
   },

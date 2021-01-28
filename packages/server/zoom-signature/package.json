@@ -1,0 +1,26 @@
+{
+  "name": "@smo043/zoom-signature",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Module to get the Zoom Signatures",
+  "repository": "https://github.com/smo043/lerna-react-app.git",
+  "license": "ISC",
+  "files": [
+    "tsconfig.json",
+    "**/*.js",
+    "**/*.js.map",
+    "**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "build:link": "rimraf ./build && yarn build --outDir ./build && copyfiles -e \"./**/*.ts\" \"./**/*.*\" build/ && yarn link --cwd ./build",
+    "clean": "rimraf \"!(node_modules|bin){,/**/}*.+(js|jsx|d.ts|js.map)\"",
+    "lint:package": "sort-package-json",
+    "prepublishOnly": "yarn build",
+    "start:watch": "ts-node-dev --no-deps --respawn app.ts --log-write-to-console true"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
